@@ -1,0 +1,35 @@
+
+<div>
+
+    <svg>
+        
+        <circle cx="75" cy="50" [attr.r]="raio" stroke="blue" fill="green" />
+    </svg>
+    
+</div>
+<div>
+    <input type="range" min="10" max="100" step="1" id="myRadiu" [(ngModel)]="raio" >
+</div>
+    
+<div>
+    <svg>
+        <rect x="50" y="25" width="40" height="60" fill="red" [attr.transform]="rotation()"/>
+    </svg>
+</div>
+<div>
+    <input type="range" min="-180" max="180" step="1" id="myAngle" [(ngModel)]="angle" >
+</div>
+
+<div>
+    <svg>
+        <rect  width="40" height="60" fill="blue" [attr.transform]="translation()"/>
+    </svg>
+</div>
+<h1>Eixo x</h1>
+<div>
+    <input type="range" min="0" max="50" step="1" id="myAngle" [(ngModel)]="eixoX" >
+</div>
+<h1>Eixo y</h1>
+<div>
+    <input type="range" min="0" max="50" step="1" id="myAngle" [(ngModel)]="eixoY" >
+</div>
